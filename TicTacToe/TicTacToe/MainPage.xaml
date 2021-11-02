@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TicTacToe.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Text="Tic Tac Toe" Padding="10" HorizontalOptions="Center" FontSize="Large" Grid.Row="0" Grid.ColumnSpan="3"/>
+        <Label x:Name="labScore" Padding="40" Text="Score" FontSize="Large" Grid.Row="0" HorizontalOptions="Center" Grid.ColumnSpan="3"/>
+        <Button x:Name="btn1" Text="X" FontSize="Large" Grid.Row="1" Grid.Column="0" Clicked="btnGame_Click"/>
+        <Button x:Name="btn2" Text="O" FontSize="Large" Grid.Row="1" Grid.Column="1" Clicked="btnGame_Click"/>
+        <Button x:Name="btn3" Text="X" FontSize="Large" Grid.Row="1" Grid.Column="2" Clicked="btnGame_Click"/>
+
+        <Button x:Name="btn4" Text="O" FontSize="Large" Grid.Row="2" Grid.Column="0" Clicked="btnGame_Click"/>
+        <Button x:Name="btn5" Text="X" FontSize="Large" Grid.Row="2" Grid.Column="1" Clicked="btnGame_Click"/>
+        <Button x:Name="btn6" Text="O" FontSize="Large" Grid.Row="2" Grid.Column="2" Clicked="btnGame_Click"/>
+
+        <Button x:Name="btn7" Text="X" FontSize="Large" Grid.Row="3" Grid.Column="0" Clicked="btnGame_Click"/>
+        <Button x:Name="btn8" Text="O" FontSize="Large" Grid.Row="3" Grid.Column="1" Clicked="btnGame_Click"/>
+        <Button x:Name="btn9" Text="X" FontSize="Large" Grid.Row="3" Grid.Column="2" Clicked="btnGame_Click"/>
+        <Label x:Name="labInfo" Padding="10" Text="info" FontSize="Large" TextColor="Red" Grid.Row="4" Grid.ColumnSpan="3"/>
+
+        <Button x:Name="btnNewGame" Text="New Game" FontSize="Large" Grid.Row="5" Grid.ColumnSpan="3" Clicked="btnNewGame_Click"/>
+    </Grid>
+
+</ContentPage>
